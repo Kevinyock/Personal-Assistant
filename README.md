@@ -1,5 +1,7 @@
 # Introduction
 
+Hello, this is my personal assistant program.
+
 # Required Libraries/Modules
 |Module Name | Version |
 |------------|---------|
@@ -9,3 +11,10 @@
 |[speech recognition](https://pypi.org/project/SpeechRecognition/)|3.8.1|
 |[pyaudio](https://pypi.org/project/PyAudio/)|0.2.12|
 |requests| 2.28.1 |
+
+# Current Feature
+
+* ASCII Art Text
+* Verify internet connectivity
+
+# Future Features
