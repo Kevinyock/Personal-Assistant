@@ -23,6 +23,7 @@ class PersonalAssistant():
         self.figletFont = pyfiglet.Figlet()
         self.playsound = playsound
         self.assistantInitlization()
+        self.internetVerification.IsGoogleDown()
     
     def assistantInitlization(self):
     
@@ -35,4 +36,3 @@ class PersonalAssistant():
         self.playsound.playsound("Audio/initialization.mp3")
 
 
-        print("Say Something")
