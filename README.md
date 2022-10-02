@@ -16,5 +16,8 @@ Hello, this is my personal assistant program.
 
 * ASCII Art Text
 * Verify internet connectivity
+* Simple Camera Detection
 
 # Future Features
+
+* Facial Recogition

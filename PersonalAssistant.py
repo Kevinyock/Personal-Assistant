@@ -7,23 +7,17 @@ import pyaudio
 
 # Personal Modules
 import InternetVerify
-
-class masterclass():
-    def __init__(self):
-        pass
-
-class childclass(masterclass):
-    def __init__(self):
-        super
+import FacialRecognition
 
 class PersonalAssistant():
     def __init__(self):
-        self.internetVerification = InternetVerify.InternetConnection()
         self.speechRecogition = sr.Recognizer()
         self.figletFont = pyfiglet.Figlet()
         self.playsound = playsound
         self.assistantInitlization()
+        self.internetVerification = InternetVerify.InternetConnection()
         self.internetVerification.IsGoogleDown()
+        self.facialRecognition = FacialRecognition.FacialRecognition()
     
     def assistantInitlization(self):
     

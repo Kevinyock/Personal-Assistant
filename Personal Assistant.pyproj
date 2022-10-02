@@ -21,6 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FacialRecognition.py" />
+    <Compile Include="TemplateClass.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PersonalAssistant.py">
       <SubType>Code</SubType>
     </Compile>
