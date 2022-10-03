@@ -11,13 +11,16 @@ Hello, this is my personal assistant program.
 |[speech recognition](https://pypi.org/project/SpeechRecognition/)|3.8.1|
 |[pyaudio](https://pypi.org/project/PyAudio/)|0.2.12|
 |requests| 2.28.1 |
+|[opencv](https://pypi.org/project/opencv-python/)|4.6.0.66|
 
 # Current Feature
 
 * ASCII Art Text
 * Verify internet connectivity
 * Simple Camera Detection
+* Facial Recogition (basic)
+* voice notification
 
 # Future Features
 
-* Facial Recogition
+* Wikipedia Search
