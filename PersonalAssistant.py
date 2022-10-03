@@ -4,6 +4,7 @@ from gtts import gTTS
 import playsound
 import speech_recognition as sr
 import pyaudio
+import os
 
 # Personal Modules
 import InternetVerify
@@ -16,7 +17,6 @@ class PersonalAssistant():
         self.playsound = playsound
         self.assistantInitlization()
         self.internetVerification = InternetVerify.InternetConnection()
-        self.internetVerification.IsGoogleDown()
         self.facialRecognition = FacialRecognition.FacialRecognition()
     
     def assistantInitlization(self):
@@ -26,7 +26,10 @@ class PersonalAssistant():
         print(self.figletFont.renderText("System"))
 
         assistantVoice = gTTS("Initializing Primary System")
-        assistantVoice.save("Audio/initialization.mp3")
+
+        if not os.path.isfile("Audio/initialization.mp3"):
+            assistantVoice.save("Audio/initialization.mp3")
+
         self.playsound.playsound("Audio/initialization.mp3")
 
 
