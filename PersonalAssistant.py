@@ -7,8 +7,9 @@ import pyaudio
 import os
 
 # Personal Modules
-import InternetVerify
+import internetVerify
 import FacialRecognition
+import voiceRecogition
 
 class PersonalAssistant():
     def __init__(self):
@@ -16,8 +17,9 @@ class PersonalAssistant():
         self.figletFont = pyfiglet.Figlet()
         self.playsound = playsound
         self.assistantInitlization()
-        self.internetVerification = InternetVerify.InternetConnection()
-        self.facialRecognition = FacialRecognition.FacialRecognition()
+        self.internetVerification = internetVerify.InternetConnection()
+        self.voiceRecogition = voiceRecogition.VoiceRecogition()
+        self.facialRecognition = facialRecognition.FacialRecognition()
     
     def assistantInitlization(self):
     

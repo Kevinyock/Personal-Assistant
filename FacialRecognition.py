@@ -2,6 +2,7 @@ import cv2
 import numpy
 
 class FacialRecognition():
+
     def __init__(self):
         print("Facial Recogition Module Online")
         capture = cv2.VideoCapture(0)
